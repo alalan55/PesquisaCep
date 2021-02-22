@@ -1,5 +1,5 @@
 var cep = document.querySelector("#cep");
-var card = document.querySelector(".card");
+var card = document.querySelector(".cardCep");
 var obj;
 
 const options = {
@@ -9,13 +9,13 @@ const options = {
 };
 
 
-cep.addEventListener('blur', request);
-// cep.addEventListener('keypress', (e)=>{
-//     const key = e.key;
-//     if(key === 3){
-//         console.log("EU SOU UM ENTER")
-//     }
-// });
+//cep.addEventListener('blur', request);
+cep.addEventListener('keypress', (e)=>{
+    const key = e.key;
+    if(key === "Enter"){
+        request();
+    }
+});
 
 function request() {
     let search = cep.value.replace("-", "");
@@ -29,6 +29,7 @@ function request() {
                 //console.log(obj)
 
                 var cartao = `
+                <div class="card">
                 <div class="title">
                 <h1>${obj.localidade}</h1>  
             </div>
@@ -42,6 +43,8 @@ function request() {
                 <span class="ddd"><i class="fas fa-phone"></i> ${obj.ddd}</span>
                 <span class="moradores"><i class="fas fa-user-friends"></i> ${obj.ibge}</span>
                 <span class="cep"><i class="fas fa-map-marked-alt"></i> ${obj.cep}</span>
+            </div>
+
             </div>
                 `
                  card.insertAdjacentHTML("beforeend", cartao)
