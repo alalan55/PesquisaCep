@@ -39,13 +39,16 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: calc(100vh - 80px);
+  height: auto;
   width: 100%;
+  padding-top: 10%;
 }
 
 main .texto-campo h1 {
   font-size: 2rem;
   padding: 10px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 main .entrada-texto {
@@ -88,7 +91,8 @@ main .entrada-texto input {
   max-width: 950px;
   margin: 0 auto;
   border-radius: 10px;
-  background: #B0E0E6;
+  border: 1px solid #000;
+  margin-top: 10px;
 }
 
 .cardCep .card .title {
@@ -97,7 +101,10 @@ main .entrada-texto input {
 }
 
 .cardCep .card .title h1 {
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 2.5rem;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .cardCep .card .info-card {
@@ -135,5 +142,23 @@ main .entrada-texto input {
   padding: 1%;
   margin: 0 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 713px) {
+  .texto-campo h1 {
+    font-size: 1.5rem  !important;
+  }
+  .card .title h1 {
+    font-size: 1.5rem  !important;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .texto-campo {
+    text-align: center;
+  }
+  .texto-campo h1 {
+    font-size: 1.2rem  !important;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
