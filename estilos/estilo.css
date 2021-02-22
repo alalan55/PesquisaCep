@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  height: 80px;
+  border: 1px solid;
+  background: #000;
+}
+
+nav .logo {
+  line-height: 80px;
+  padding: 0 10%;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+main .texto-campo h1 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+main .entrada-texto {
+  /* border: 1px solid; */
+  width: 60%;
+  position: relative;
+}
+
+main .entrada-texto input {
+  width: 100%;
+  padding: 2%;
+  /* border: 0;
+            border-bottom: 2px solid #9b9b9b;
+            outline: 0;
+            font-size: 1.3rem;
+            color: white;
+            background: transparent;
+            transition: border-color 0.2s; */
+}
+
+.entrada-texto input {
+  width: 100%;
+  padding: 2%;
+  /* border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    background: transparent;
+    transition: border-color 0.2s; */
+}
+
+.cardCep {
+  width: 100%;
+  margin-top: 25px;
+  padding: 1%;
+}
+
+.cardCep .card {
+  max-width: 950px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #B0E0E6;
+}
+
+.cardCep .card .title {
+  text-align: center;
+  padding: 2%;
+}
+
+.cardCep .card .title h1 {
+  font-weight: 400;
+}
+
+.cardCep .card .info-card {
+  margin: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.cardCep .card .info-card i {
+  color: #334f52;
+}
+
+.cardCep .card .info-card span {
+  padding: 1%;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.cardCep .info-card2 {
+  margin: 1%;
+  padding-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.cardCep .info-card2 i {
+  color: #334f52;
+}
+
+.cardCep .info-card2 span {
+  padding: 1%;
+  margin: 0 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=estilo.css.map */
