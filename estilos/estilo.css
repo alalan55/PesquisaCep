@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -47,12 +47,11 @@ main {
 main .texto-campo h1 {
   font-size: 2rem;
   padding: 10px;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 main .entrada-texto {
-  /* border: 1px solid; */
   width: 60%;
   position: relative;
 }
@@ -60,25 +59,11 @@ main .entrada-texto {
 main .entrada-texto input {
   width: 100%;
   padding: 2%;
-  /* border: 0;
-            border-bottom: 2px solid #9b9b9b;
-            outline: 0;
-            font-size: 1.3rem;
-            color: white;
-            background: transparent;
-            transition: border-color 0.2s; */
 }
 
 .entrada-texto input {
   width: 100%;
   padding: 2%;
-  /* border: 0;
-    border-bottom: 2px solid #9b9b9b;
-    outline: 0;
-    font-size: 1.3rem;
-    color: white;
-    background: transparent;
-    transition: border-color 0.2s; */
 }
 
 .cardCep {
@@ -103,8 +88,8 @@ main .entrada-texto input {
 .cardCep .card .title h1 {
   font-weight: 600;
   font-size: 2.5rem;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .cardCep .card .info-card {
@@ -144,12 +129,21 @@ main .entrada-texto input {
   text-align: center;
 }
 
+.card__erro {
+  display: none;
+  background-color: #d85757;
+  padding: .5em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
 @media screen and (max-width: 713px) {
   .texto-campo h1 {
-    font-size: 1.5rem  !important;
+    font-size: 1.5rem !important;
   }
   .card .title h1 {
-    font-size: 1.5rem  !important;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -158,7 +152,7 @@ main .entrada-texto input {
     text-align: center;
   }
   .texto-campo h1 {
-    font-size: 1.2rem  !important;
+    font-size: 1.2rem !important;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
